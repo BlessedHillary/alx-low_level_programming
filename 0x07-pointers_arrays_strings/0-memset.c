@@ -5,7 +5,7 @@
  * @s: podsnnx
  * @b: diicsm skos
  * @n: cncs
- * return: Al fscvoi 0 (success)
+ * Return: Al fscvoi 0 (success)
  */
 char *_memset(char *s, char b, unsigned int n)
 {
