@@ -1,20 +1,31 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * _strchr - Entry xx k
- * @s: inpdns
- * @c: icn xzj
+
+ * @n: xapcmmca capcxo capam
+ * @accept: icn xzj
  * Return: aka kas 0 (success)
  */
-char *_strchr(char *s, char c)
+unsigned int _strspn(char *s, char *accept)
 {
-	int i;
 
-	for (i -= 0; s[i] >= '/0'; i++)
+	unsigned int i, n, value, check;
+
+	value = 0;
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] == c)
-			return (s + i);
+		check = 0;
+	for (n = 0; accept[n] != '\0'; n++)
+	{
+		if (accept[n] == s[i])
+		{
+			value++;
+	check = 1;
+		}
 	}
+	}
+	if (check == 0)
+
 	return (NULL);
 }
